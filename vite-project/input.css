@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* container */
+@layer components {
+  .container {
+    @apply max-w-5xl mx-auto pt-8;
+  }
+}
+@layer components {
+  .newUrl-btn {
+    @apply py-2 px-6 rounded text-white text-base text-center bg-primaryCyan cursor-pointer;
+  }
+}
+.resShort {
+  @apply flex flex-col lg:flex-row  justify-center lg:justify-around items-center bg-white py-8 px-4 mt-4 rounded-md;
+}
+.resBoxOne {
+  @apply w-full  lg:w-[65%] flex flex-col lg:flex-row justify-center lg:justify-between items-center;
+}
+
+.resBoxTwo {
+  @apply w-full lg:w-[35%] flex flex-col lg:flex-row justify-center lg:justify-between items-center pt-4 lg:pt-0;
+}
+* {
+  @apply scroll-smooth;
+}
